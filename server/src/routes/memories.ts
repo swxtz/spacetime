@@ -127,7 +127,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
         id,
       }
     });
-
+''
     if(memory.userId !== request.user.sub) {
       return reply.status(401).send();
     }
